@@ -27,7 +27,7 @@ font = ImageFont.load_default()
 
 
 # Drawing frame
-def draw_frame(t):
+def draw(t):
     img = Image.new("RGB", (w, h), color=(245, 245, 250))
     draw = ImageDraw.Draw(img)
 
@@ -102,7 +102,7 @@ def draw_frame(t):
 
 
 # Make video
-video = VideoClip(draw_frame, duration=duration)
+video = VideoClip(draw, duration=duration)
 audio = AudioFileClip("narration.mp3")
 video = video.with_audio(audio)
 final = CompositeVideoClip([video])
