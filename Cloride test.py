@@ -19,7 +19,7 @@ tts.save("narration.mp3")
 
 W, H = 1280, 720
 duration = 30
-fps = 12
+fps = 120
 
 try:
     font = ImageFont.truetype("DejaVuSans.ttf", 32)
