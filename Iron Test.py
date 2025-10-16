@@ -21,11 +21,7 @@ W, H = 1280, 720
 duration = 25
 fps = 120
 
-try:
-    font = ImageFont.truetype("DejaVuSans.ttf", 28)
-except:
-    font = ImageFont.load_default()
-
+font = ImageFont.load_default()
 
 # Draw frame
 def draw_frame(t):
